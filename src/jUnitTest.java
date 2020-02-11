@@ -34,16 +34,16 @@ public class jUnitTest {
 		s = selec.sortList(uno);
 		
 		ArrayList<Comparing> r = new ArrayList<Comparing>();
-		r = selec.sortList(uno);
+		r = rad.sortList(uno);
 		
 		ArrayList<Comparing> q = new ArrayList<Comparing>();
-		q = selec.sortList(uno);
+		q = quick.sortList(uno);
 		
 		ArrayList<Comparing> m = new ArrayList<Comparing>();
-		m = selec.sortList(uno);
+		m = merg.sortList(uno);
 		
 		ArrayList<Comparing> in = new ArrayList<Comparing>();
-		in = selec.sortList(uno);
+		in = ins.sortList(uno);
 		
 		/*for(int i=0; i<uno.size(); i++) {//Selection
 			assertEquals(dos.get(i).getValor(), s.get(i).getValor());
@@ -63,3 +63,4 @@ public class jUnitTest {
 	}
 
 }
+
