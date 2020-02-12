@@ -15,14 +15,14 @@ public class Driver{
 		Random rand = new Random();
 		ArrayList<Comparing> arr = new ArrayList<Comparing>();
 		//int r = rand.nextInt(2091)+10;
-		int r = rand.nextInt(2091)+10;
+		int r = rand.nextInt(2991)+10;
 		File datos = new File("desorden.txt");
 		try{
 			BufferedWriter writer = new BufferedWriter(new FileWriter(datos));
-			for(int i=0; i<=500; i++){
+			for(int i=0; i<=r; i++){
 				//int s = rand.nextInt(3001);
 				int s = rand.nextInt(3001);
-				arr.add(new Comparing(s));
+				arr.add(new Comparing(i));
 				writer.write(s + "\n");
 				
 			}
@@ -31,8 +31,8 @@ public class Driver{
 			System.out.println("No hay entrada");
 		}
 
-		Merge merge = new Merge();
-		arr = merge.sortList(arr);
+		/*Merge merge = new Merge();
+		arr = merge.sortList(arr);*/
 		
 
 
@@ -47,8 +47,8 @@ public class Driver{
 		arr = ins.sortList(arr);*/
 		
 
-		/*Radix rad = new Radix();
-		arr = rad.sortList(arr);*/
+		Radix rad = new Radix();
+		arr = rad.sortList(arr);
 		
 
 
