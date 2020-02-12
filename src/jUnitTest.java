@@ -1,5 +1,13 @@
 import static org.junit.Assert.*;
 
+/**
+ * @author Brandon Hernández 19376
+ * @since 10/02/2020
+ * @version 10/02/2020
+ * @className jUnitTest.java
+ * Donde se realizaron pruebas unitarias
+ */
+
 import java.util.ArrayList;
 
 import org.junit.Test;
@@ -45,21 +53,21 @@ public class jUnitTest {
 		ArrayList<Comparing> in = new ArrayList<Comparing>();
 		in = ins.sortList(uno);
 		
-		/*for(int i=0; i<uno.size(); i++) {//Selection
+		for(int i=0; i<uno.size(); i++) {//Selection
 			assertEquals(dos.get(i).getValor(), s.get(i).getValor());
-		}*/
-		/*for(int i=0; i<uno.size(); i++) {//Radix
+		}
+		for(int i=0; i<uno.size(); i++) {//Radix
 			assertEquals(dos.get(i).getValor(), r.get(i).getValor());
-		}*/
-		/*for(int i=0; i<uno.size(); i++) {//Quick
+		}
+		for(int i=0; i<uno.size(); i++) {//Quick
 			assertEquals(dos.get(i).getValor(), q.get(i).getValor());
-		}*/
-		/*for(int i=0; i<uno.size(); i++) {//Merge
+		}
+		for(int i=0; i<uno.size(); i++) {//Merge
 			assertEquals(dos.get(i).getValor(), m.get(i).getValor());
-		}*/
-		/*for(int i=0; i<uno.size(); i++) {//insert
+		}
+		for(int i=0; i<uno.size(); i++) {//insert
 			assertEquals(dos.get(i).getValor(), in.get(i).getValor());
-		}*/
+		}
 	}
 
 }

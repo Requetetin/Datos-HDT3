@@ -1,18 +1,27 @@
 import java.util.*;
 import java.io.*;
 
+/**
+ * @author Martín Amado Girón - 19020
+ * @since 09/02/2020
+ * @version 11/02/2020
+ * @className Driver.java
+ * Main del programa, encargado de llenar los archivos previo y luego al sort
+ */
+
+
 public class Driver{
 	public static void main(String[] args){		
 		Random rand = new Random();
 		ArrayList<Comparing> arr = new ArrayList<Comparing>();
 		//int r = rand.nextInt(2091)+10;
-		int r = rand.nextInt(10)+5;
+		int r = rand.nextInt(2091)+10;
 		File datos = new File("desorden.txt");
 		try{
 			BufferedWriter writer = new BufferedWriter(new FileWriter(datos));
-			for(int i=0; i<=r; i++){
+			for(int i=0; i<=500; i++){
 				//int s = rand.nextInt(3001);
-				int s = rand.nextInt(15);
+				int s = rand.nextInt(3001);
 				arr.add(new Comparing(s));
 				writer.write(s + "\n");
 				
@@ -22,9 +31,9 @@ public class Driver{
 			System.out.println("No hay entrada");
 		}
 
-		/*Merge merge = new Merge();
-		arr = merge.sortList(arr);*/
-		//Todavia no funciona bien
+		Merge merge = new Merge();
+		arr = merge.sortList(arr);
+		
 
 
 		/*Selection sel = new Selection();
@@ -32,11 +41,11 @@ public class Driver{
 
 		/*Quick quick = new Quick();
 		arr = quick.sortList(arr);*/
-		//No funciona bien
+		
 
 		/*Insertion ins = new Insertion();
 		arr = ins.sortList(arr);*/
-		//Casi funciona
+		
 
 		/*Radix rad = new Radix();
 		arr = rad.sortList(arr);*/
